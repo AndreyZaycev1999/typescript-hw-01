@@ -3,8 +3,9 @@ export enum UserRole {
     editor = 'editor',
     guest = 'guest',
 }
+type RoleDescription = Record<UserRole, string>;
 
-const RoleDescription: Record<UserRole, string> = {
+const RoleDescription: RoleDescription = {
     admin: 'Admin User',
     editor: 'Editor User',
     guest: 'Guest User',
